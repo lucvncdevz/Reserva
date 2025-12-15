@@ -1,0 +1,66 @@
+/* Navbar.css */
+/* Navbar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  box-sizing: border-box;
+}
+
+
+/* Brand */
+.navbar .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2697f3;
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #4b4040;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover apenas para links comuns */
+.nav-links li a:not(.btn-login):hover {
+  color: #0798ac;
+  transform: scale(1.05);
+}
+
+/* Botão Login/Admin */
+.nav-links li a.btn-login {
+  padding: 0.5rem 1rem;
+  background-color: #2697f3;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links li a.btn-login:hover {
+  background-color: #076abb;
+  color: #ffffff;
+  transform: none;
+}

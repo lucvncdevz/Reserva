@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import supabase from "../../../services/supabase-cliente";
-import FazerReserva from "./fazer_reserva";
+import FazerReserva from "../FazerReserva";
 import "./reserva.css"
 
 export function Reserva() {
@@ -41,8 +41,8 @@ export function Reserva() {
             {spaces.map((space) => (
               <div className="card" key={space.id}>
                 <h3>{space.appellation}</h3>
-                <p>Capacidade: {space.capacity}</p>
-                <p>ID: {space.id}</p>
+                <p>Capacidade: {space.capacity} pessoas</p>
+                <p> {space.descrição}</p>
 
                 <button className="btn" onClick={() => setSelectedSpace(space.id)}>
                   Fazer reserva

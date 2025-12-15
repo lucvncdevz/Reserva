@@ -1,0 +1,18 @@
+.intro {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f5f6fa;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #060535;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+  font-size: 1rem;
+}
